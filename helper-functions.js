@@ -2,7 +2,7 @@ var VOLUSION_HELPERS = VOLUSION_HELPERS || {};
 
 VOLUSION_HELPERS.detect = {
 	isHome: function(){
-		returnValue = location.pathname.toLowerCase('default') > -1 || location.pathname=="/") ? true : false;
+		returnValue = location.pathname.toLowerCase('default') > -1 || location.pathname=="/" ? true : false;
 		return returnValue;
 	},
 	isCategory: function(){
