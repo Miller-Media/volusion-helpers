@@ -20,6 +20,10 @@ VOLUSION_HELPERS.detect = {
 	isShoppingCart: function(){
 		returnValue = location.pathname.toLowerCase().indexOf('shoppingcart') > -1 ? true : false;
 		return returnValue;
+	},
+	isOrderFinished: function(){
+		returnValue = location.pathname.toLowerCase().indexOf('orderfinished') > -1 ? true : false;
+		return returnValue;
 	}
 };
 
