@@ -42,6 +42,12 @@ VOLUSION_HELPERS.helper = {
 		if (!results) return null;
 		if (!results[2]) return '';
 		return decodeURIComponent(results[2].replace(/\+/g, " "));
+	},
+
+	getTextNodesIn: function(el) {
+	    return $jQueryModern(el).find(":not(iframe)").addBack().contents().filter(function() {
+	        return this.nodeType == 3;
+	    });
 	}
 };
 
